@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Visor Eumetrain</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+<style>
+
+    html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Numans'; sans-serif;
+	}
+			
+	body{
+	font-family: Cambria, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+	background: #e0e3ec url(images/bgnoise_lg.jpg) repeat top left;
+	font-weight: 400;
+	font-size: 15px;
+	color: #393b40;
+	overflow-y: scroll;
+	}	
+			
+	#header {
+	width: 100%;
+	height: 30px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    }
+
+    #header .logo {
+    padding: 3px;
+	font-size: 25px;
+    }
+	
+	.grad{
+	  background: red; /* For browsers that do not support gradients */
+	  background: -webkit-linear-gradient(-90deg, red, yellow); /* For Safari 5.1 to 6.0 */
+	  background: -o-linear-gradient(-90deg, red, yellow); /* For Opera 11.1 to 12.0 */
+	  background: -moz-linear-gradient(-90deg, red, yellow); /* For Firefox 3.6 to 15 */
+	  background: linear-gradient(90deg, #0080FF, white); /* Standard syntax */
+	}
+	td {
+	  padding: 5px;
+	  background: white;	
+	}
+	
+</style>
+
+<body>	
+
+<table border=0 width="100%" >
+	<tr>
+		<td class="grad">
+			<a align="left" style="font-weight: bold; font-size: 25px; color: white;" >Vis 0.8</a> 
+		</td>
+	</tr>	
+	<tr>
+		<td>
+			<p align="left" style="font-size: 17px;" >
+			<b>VIS - VISible: 0.5 - 0.9 micrometre</b>
+			<br><br>
+			The satellite receives that part of the sun radiation which is reflected by the earth surface or by cloudiness. It is a so-called window channel which means that radiation is not significantly absorbed by the gases in the troposphere; this means in other words that it is possible to look as though through a window downward to the radiating surface which can be earth surface or cloud tops.<b> Daytime cloud-mapping and albedo determination.</b>
+			<br><br>
+			Different grey shades in this VIS channel represent different values of albedo:
+			<br>
+			<table>
+				  <tr>
+					<td><b>Bright values</b></td>
+					<td>High albedo</td>
+					<td>Thick clouds. Land surfaces</td>		
+				  </tr>
+				  <tr>
+					<td><b>Grey values</b></td>
+					<td>Low albedo</td>		
+					<td>Thin translucent clouds</td>
+				  </tr>
+				  <tr>
+					<td><b>Dark values</b></td>
+					<td>No reflection</td>		
+					<td>Water and vegetation</td>
+				  </tr>
+			</table>		
+			</p> 
+		</td>
+	</tr>
+	<tr>
+		<td class="grad">
+			<a aalign="left" style="font-weight: bold; font-size: 25px; color: white;">IR 10.8</a> 
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p align="left" style="font-size: 17px;" >
+			<b>IR - InfraRed: 10.5 - 12.5 micrometre</b>
+			<br><br>
+			The satellite receives radiation which is emitted by the earth and the clouds because of their temperature. IR is a window channel, as is VIS, and with the same consequences. <b>Day and night cloud-mapping and determination of surface temperature.</b>
+			<br><br>
+			Different grey shades in the IR channel represent different temperatures of the radiating surface which can be the earth surface or the cloud tops. The grey shades presented in the IR images are reversed (white becomes black) to get a similar appearance to the VIS image:
+			<br>
+			<table>
+				  <tr>
+					<td><b>Bright values</b></td>
+					<td>Low temperatures</td>
+					<td>Cold (high) cloud tops </td>		
+				  </tr>
+				  <tr>
+					<td><b>Grey values</b></td>
+					<td>Middle temperatures</td>		
+					<td>Middle cloud tops </td>
+				  </tr>
+				  <tr>
+					<td><b>Dark values</b></td>
+					<td>Warm temperatures</td>		
+					<td>Hot land or sea surface</td>
+				  </tr>
+			</table>		
+			</p> 
+		</td>
+	</tr>
+	<tr>
+		<td class="grad">
+			<a align="left" style="font-weight: bold; font-size: 25px; color: white;">WV 6.2</a> 
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p align="left" style="font-size: 17px;" >
+			<b>WV - Water Vapour</b>
+			<br><br>
+			The satellite receives radiation which is emitted by the water vapour in the upper troposphere (approximately above 600 hPa up to 300 hPa). The WV channel represents an absorption measurement of the WV absorption band. This means that radiation from below 600 hPa is absorbed by the WV in the layer above which according to the radiation laws (Kirchhoff) becomes a radiating surface itself.  
+			<br><br>
+			Different grey shades in the WV channel represent different WV content above 600 hPa. High upper level WV (bright) help us to identify the location and orientation of jet axes. The dry areas (dark) are a sign of cyclogenesis as stratospheric (dry) air is protruding down: 
+			<br>
+			<table>
+				  <tr>
+					<td><b>Bright values</b></td>
+					<td>Liquid water </td>
+					<td>Clouds  </td>		
+				  </tr>
+				  <tr>
+					<td><b>Grey values</b></td>
+					<td>Water vapour </td>		
+					<td>Water vapour with varying intensity </td>
+				  </tr>
+				  <tr>
+					<td><b>Dark values</b></td>
+					<td>Very low water vapour</td>		
+					<td>Dry upper troposphere </td>
+				  </tr>
+			</table>		
+			</p> 
+		</td>
+	</tr>
+	<tr>
+		<td class="grad">
+			<a aalign="left" style="font-weight: bold; font-size: 25px; color: white;">Airmass</a> 
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p align="left" style="font-size: 17px;" >
+			Airmass is an RGB composite based upon data from infrared and water vapour channels from Meteosat Second Generation. It is designed and tuned to monitor the evolution of cyclones, in particular rapid cyclogenesis, jet streaks and PV (potential vorticity) anomalies (appear reddish in the image).   
+			<br><br>
+			Due to the incorporation of the water vapour and ozone channels, its usage at high satellite viewing angles is limited. The Airmass RGB is composed from data from a combination of the SEVIRI WV6.2, WV7.3, IR9.7 and IR10.8 channels and can thus be used day and night. 
+			<br>
+			<ul>
+			  <li>Midlevel clouds (orange/brown)</li>
+			  <li>High clouds (white)</li>
+			  <li>Jet (red)</li>
+			  <li>PV anomaly (red)</li>
+			  <li>Cold Airmass (high O3 concentration) (purple/blue)</li>
+			  <li>Warm Airmass (low O3 concentration) (green/blue)</li>
+			</ul> 
+			<br>
+			<center><img src="images/airmass.jpg"></img></center>		
+			</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="grad">
+			<a align="left" style="font-weight: bold; font-size: 25px; color: white;">Day Natural Colors RGB</a> 
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p align="left" style="font-size: 17px;" >
+			Natural colour RGB shows you the Earth as how you would expect it from space with the zones of vegetation in greenish and the desert areas appearing in reddish colour. 
+			<br><br>
+			The clouds appear from white to cyan. Water clouds with small droplets have large reflectance at all three channels and hence appear whitish, while snow cover and ice clouds appear cyan.
+			<br>
+			<ul>
+			  <li>Water clouds (white)</li>
+			  <li>Ice clouds and snow cover (cyan)</li>
+			  <li>Vegetation (green)</li>
+			  <li>Deserts (red/pink)</li>
+			</ul>
+			</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="grad">
+			<a align="left" style="font-weight: bold; font-size: 25px; color: white;">HRV</a> 
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p align="left" style="font-size: 17px;" >
+			High resolution visible provides extreme good details of different features. Best used for detection of low clouds and fog. Especially valley fog can be monitored quite well with this RGB. 
+			<br>
+			<ul>
+			  <li>Convection (white and bright)</li>
+			  <li>High Clouds (blue)</li>
+			  <li>Low clouds and fog (yellow)</li>
+			</ul>
+			</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="grad">
+			<a align="left" style="font-weight: bold; font-size: 25px; color: white;">Day Microphysics RGB</a> 
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p align="left" style="font-size: 17px;" >
+			The Day Microphysics RGB was inherited from Rosenfeld and Lensky (1998). 
+			<br>
+			The VIS0.8 reflectance in <b>red</b> approximates the cloud optical depth and amount of cloud water and ice.
+			<br>
+			The IR3.9 solar reflectance in <b>green</b> is a qualitative measure for cloud particle size and phase.
+			<br>
+			The IR10.8 brightness temperature modulates the <b>blue</b>.
+			<br><br>
+			This color scheme is useful for cloud analysis, convection, fog, snow, and fires. 
+			<br>
+			<ul>
+			  <li>Convection (orange to red)</li>
+			  <li>High Clouds (blue)</li>
+			  <li>Low clouds and fog (yellow)</li>
+			  <li>Snow (pink)</li>
+			  <li>Forest fire (cyan)</li>
+			</ul>
+			</p>
+		</td>
+	</tr>
+		<tr>
+		<td class="grad">
+			<a align="left" style="font-weight: bold; font-size: 25px; color: white;">Night Microphysics RGB</a> 
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p align="left" style="font-size: 17px;" >
+			The Night Microphysics product is an RGB composite based upon the IR3.9 and the window channels of Meteosat Second Generation satellite. 
+			<br><br>
+			For fog/low-clouds the IR10.8 - IR3.9 yields a BTD of +6 to +10K which is much higher as opposed to the IR10.8 - IR8.7 BTD used in the 24 hour Microphysics RGB. It is thus better to monitor the evolution of fog/low stratus. Other (secondary) applications are the detection of fires and cloud classification in general.
+			<br><br>
+			However! Due to the CO2 absorption in the IR3.9 channel the use of this RGB is not suitable for high latitudes due to limb cooling. Another restriction resides in the fact that for cold scenes (i.e. -20°C and lower) the IR3.9 channel tends to become noisy and produces grain.
+			<br>
+			<ul>
+			  <li>Low clouds and fog (yellow)</li>
+			  <li>High and midlevel clouds (red)</li>
+			  <li>Bare ground (pink)</li>
+			  <li>Sea (purple)</li>
+			</ul>  
+			<center><img src="images/nightmicro.jpg"></img></center>		
+			</p> 
+		</td>
+	</tr>
+		<tr>
+		<td class="grad">
+			<a align="left" style="font-weight: bold; font-size: 25px; color: white;">Dust</a> 
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p align="left" style="font-size: 17px;" >
+			Dust is an RGB composite based upon infrared channel data from the Meteosat Second Generation satellite. It is designed to monitor the evolution of dust storms (pink) during both day and night. The Dust RGB is composed from data from a combination of the SEVIRI IR8.7, IR10.8 and IR12.0 channels. Other applications are moisture boundaries and SO2 plumes emitted by Volcanoes. 
+			<br>
+			<ul>
+			  <li>Dust (pink)</li>
+			  <li>Thick iceclouds (red)</li>
+			  <li>Cirrus (black/blue)</li>
+			  <li>Low clouds and fog (yellow)</li>
+			</ul>
+			<center><img src="images/dust.jpg"></img></center>		
+			</p> 
+		</td>
+	</tr>
+		<tr>
+		<td class="grad">
+			<a align="left" style="font-weight: bold; font-size: 25px; color: white;">Convection</a> 
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p align="left" style="font-size: 17px;" >
+			The severe storm RGB is probably de most difficult RGB to interpret. The bare ground and sea appears in blue shades whereas the convective cells appear in shades of red and yellow colours.  
+			<br><br>
+			The yellow cell contains the highest updrafts because indicates high reflection of small ice particles. The particles in severe updrafts have less time to collide and merge to become bigger. 
+			<ul>
+			  <li>Highest updrafts (yellow)</li>
+			  <li>Severe updrafts (red)</li>
+			  <li>Bare ground and sea (blue)</li>
+			</ul>	
+			</p> 
+		</td>
+	</tr>
+</table>
+<script src="js/jquery-1.12.4.min.js"></script>
+</body>
+</html>
