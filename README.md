@@ -13,6 +13,8 @@ It also uses the following plugins:
 
 Any comment or advice, please do not hesitate to contact me.
 
+Data from http://eumetrain.org/
+
 Other projects:
 
 1. https://begio.github.io/NWC-SAF-Products-Viewer/
