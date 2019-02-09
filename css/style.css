@@ -115,7 +115,7 @@
 	}
 	
 	#floatingDivSearch{
-		z-index: 3; 
+		z-index: 4; 
 		position: fixed; 
 		background: rgba(244, 244, 244, 0.7);
 		border-radius: 15px;
