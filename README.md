@@ -1,7 +1,5 @@
 # EUMeTrain-ePort-MapViewer
 
-DEMO version. For full features contact me please.
-
 https://begio.github.io/EUMeTrain-ePort-MapViewer/
 
 Allows to visualize EUMeTrain products through the Leaflet library (https://leafletjs.com/).
