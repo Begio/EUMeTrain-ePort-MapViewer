@@ -19,7 +19,7 @@ All meteorological data and the webserver owns to Eumetrain. Contact E-mail: inf
 	<link href="css/base.css" rel="stylesheet" type="text/css">	
 </head>
 <body onload="data_time(); fgrid();">
-<!--<a href="//github.com/Begio/EUMeTrain-ePort-MapViewer"><img style="position: fixed; bottom: 0; left: 0; border: 0; z-index: 1000000" src="images/forkme_right_green_6d6d6d.png" alt="Fork me on GitHub"></a>-->	
+<a href="//github.com/Begio/EUMeTrain-ePort-MapViewer"><img style="position: fixed; bottom: 0; left: 0; border: 0; z-index: 1000000" src="images/forkme_right_green_6d6d6d.png" alt="Fork me on GitHub"></a>
 <div id="inibg">
 	<div id="loader"></div>
 </div>
@@ -30,7 +30,7 @@ All meteorological data and the webserver owns to Eumetrain. Contact E-mail: inf
 <div id="controlFlotante">
 <table border=0 width="750px">
 <tr>
-	<td><img id="btnCrossSection" onclick="crosssectionactive();" src="images/cross.png" class="btn" style="width: 17px; height: 17px; display: block;" title="Cross Section Tool" ></img></td>
+	<td><img id="btnCrossSection" src="images/cross.png" class="btn" style="width: 17px; height: 17px; display: block;" title="Cross Section Tool" ></img></td>
 	<td><img id="btnGridblack" onclick="fgrid();" src="images/grid_ico.png" class="btn" style="width: 17px; height: 17px; display: block;" title="Grid Black"></img></td>
 	<td><img id="btnGridwhite" onclick="fgridw();" src="images/grid_icow.png" class="btn" style="width: 17px; height: 17px; display: block;" title="Grid White"></img></td>
 	<td><img id="btnVariablesDiv" onclick="floatingDivVariablesopen();" src="images/variable.png" class="btn" style="width: 17px; height: 17px; display: block;" title="Variables Menu" ></img></td>	
@@ -41,8 +41,8 @@ All meteorological data and the webserver owns to Eumetrain. Contact E-mail: inf
 	<td><button class="btn" id="prev24">-24h</button>
 	<button class="btn" id="prev6">-3h</button>
 	<button class="btn" id="now" >Last</button>
-	<button class="btn" id="next6">+3h</button>
-	<button class="btn" id="next24">+24h</button></td>
+	<button class="btn" >+3h</button>
+	<button class="btn" >+24h</button></td>
 <tr>	
 </table>
 </div>
@@ -55,14 +55,8 @@ All meteorological data and the webserver owns to Eumetrain. Contact E-mail: inf
 	</div>
 	<select onchange="canvihora(hora)" id="hora">
 							<option value="-" >Hour</option>
-							<option value="00" >00</option>
-							<option value="03" >03</option>
-							<option value="06" >06</option>
-							<option value="09" >09</option>
 							<option value="12" >12</option>
-							<option value="15" >15</option>
-							<option value="18" >18</option>
-							<option value="21" >21</option>	
+
 	</select>
 	<br><br>
 	<button id="query">Query</button>
