@@ -1,4 +1,4 @@
-<!--- VERSION 1.1 11/02/2019 
+<!--- VERSION 1.5 17/02/2019 
 
 This web app was developed by Sergio Gallego.
 Weather Forecaster at Servei Meteorologic de Catalunya (Meterological Service of Catalonia).
@@ -18,31 +18,31 @@ All meteorological data and the webserver owns to Eumetrain. Contact E-mail: inf
 	<link href="plugins/glDatePicker-2.0/styles/glDatePicker.flatwhite.css" rel="stylesheet" type="text/css">
 	<link href="css/base.css" rel="stylesheet" type="text/css">	
 </head>
-<body onload="data_time();">
-<a href="//github.com/Begio/EUMeTrain-ePort-MapViewer"><img style="position: fixed; bottom: 0; left: 0; border: 0; z-index: 1000000" src="images/forkme_right_green_6d6d6d.png" alt="Fork me on GitHub"></a>	
+<body onload="data_time(); fgrid();">
+<!--<a href="//github.com/Begio/EUMeTrain-ePort-MapViewer"><img style="position: fixed; bottom: 0; left: 0; border: 0; z-index: 1000000" src="images/forkme_right_green_6d6d6d.png" alt="Fork me on GitHub"></a>-->	
 <div id="inibg">
 	<div id="loader"></div>
 </div>
 
 <div id="header">
-    <div class="logo"><img src="images/logo.png" style="width: 100px;" href="http://eumetrain.org/"></img> ePort MapViewer DEMO v1.1</div>
+    <div class="logo"><img src="images/logo.png" style="width: 100px;" href="http://eumetrain.org/"></img> ePort MapViewer v1.5 DEMO</div>
 </div>
 <div id="controlFlotante">
 <table border=0 width="750px">
 <tr>
-	<td><img id="btnCrossSection" onclick="crosssectionactive();" src="images/cross.png" class="myButton" style="width: 17px; height: 17px; display: block;" title="Cross Section Tool" ></img></td>
-	<td><img id="btnGridblack" onclick="fgrid();" src="images/grid_ico.png" class="myButton" style="width: 17px; height: 17px; display: block;" title="Grid Black"></img></td>
-	<td><img id="btnGridwhite" onclick="fgridw();" src="images/grid_icow.png" class="myButton" style="width: 17px; height: 17px; display: block;" title="Grid White"></img></td>
-	<td><img id="btnVariablesDiv" onclick="floatingDivVariablesopen();" src="images/variable.png" class="myButton" style="width: 17px; height: 17px; display: block;" title="Variables Menu" ></img></td>	
-	<td><img id="btnCrossSectionDiv" onclick="floatingDivCrossSectionopen();" src="images/compass.png" class="myButton" style="width: 17px; height: 17px; display: block;" title="Cross Section Menu"></img></td>
-	<td><img id="btnSatelliteDiv" onclick="floatingDivSatelliteopen();" src="images/satellite.png" class="myButton" style="width: 17px; height: 17px; display: block;" title="Satellite Menu"></img></td>	
-	<td><img id="btnSearchDiv" onclick="floatingDivSearchopen();" src="images/search.png" class="myButton" style="width: 17px; height: 17px; display: block;" title="Open calendar"></img></td>
+	<td><img id="btnCrossSection" onclick="crosssectionactive();" src="images/cross.png" class="btn" style="width: 17px; height: 17px; display: block;" title="Cross Section Tool" ></img></td>
+	<td><img id="btnGridblack" onclick="fgrid();" src="images/grid_ico.png" class="btn" style="width: 17px; height: 17px; display: block;" title="Grid Black"></img></td>
+	<td><img id="btnGridwhite" onclick="fgridw();" src="images/grid_icow.png" class="btn" style="width: 17px; height: 17px; display: block;" title="Grid White"></img></td>
+	<td><img id="btnVariablesDiv" onclick="floatingDivVariablesopen();" src="images/variable.png" class="btn" style="width: 17px; height: 17px; display: block;" title="Variables Menu" ></img></td>	
+	<td><img id="btnCrossSectionDiv" onclick="floatingDivCrossSectionopen();" src="images/compass.png" class="btn" style="width: 17px; height: 17px; display: block;" title="Cross Section Menu"></img></td>
+	<td><img id="btnSatelliteDiv" onclick="floatingDivSatelliteopen();" src="images/satellite.png" class="btn" style="width: 17px; height: 17px; display: block;" title="Satellite Menu"></img></td>	
+	<td><img id="btnSearchDiv" onclick="floatingDivSearchopen();" src="images/search.png" class="btn" style="width: 17px; height: 17px; display: block;" title="Open calendar"></img></td>
 	<td><a id="fecha" style="color:white; font-size: 13px; font-weight: bold; text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;"></a></td>
-	<td><button class="myButton" id="prev24">-24h</button>
-	<button class="myButton" id="prev6">-6h</button>
-	<button class="myButton" id="now" >Last</button>
-	<button class="myButton" id="next6">+6h</button>
-	<button class="myButton" id="next24">+24h</button></td>
+	<td><button class="btn" id="prev24">-24h</button>
+	<button class="btn" id="prev6">-3h</button>
+	<button class="btn" id="now" >Last</button>
+	<button class="btn" id="next6">+3h</button>
+	<button class="btn" id="next24">+24h</button></td>
 <tr>	
 </table>
 </div>
@@ -56,9 +56,13 @@ All meteorological data and the webserver owns to Eumetrain. Contact E-mail: inf
 	<select onchange="canvihora(hora)" id="hora">
 							<option value="-" >Hour</option>
 							<option value="00" >00</option>
+							<option value="03" >03</option>
 							<option value="06" >06</option>
+							<option value="09" >09</option>
 							<option value="12" >12</option>
-							<option value="18" >18</option>				
+							<option value="15" >15</option>
+							<option value="18" >18</option>
+							<option value="21" >21</option>	
 	</select>
 	<br><br>
 	<button id="query">Query</button>
