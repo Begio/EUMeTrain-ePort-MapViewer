@@ -1,6 +1,6 @@
 # EUMeTrain-ePort-MapViewer
 
-DEMO version. For full features contact me please. Full version can be used at http://eumetrain.org/eport/eport_javascript.html
+DEMO version. For full features contact me please. Full version can be used freely at http://eumetrain.org/eport/eport_javascript.html
 
 https://begio.github.io/EUMeTrain-ePort-MapViewer/
 
