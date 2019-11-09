@@ -41,44 +41,36 @@ All meteorological data and the webserver owns to Eumetrain. Contact E-mail: inf
 <div id="floatingDivScaletemp"><img src="images/temperature.png" style="width: 314px;"></img></div>
 <div id="floatingDivScaleradar"><img src="images/radarescale.png" style="width: 314px;"></img></div>
 <div id="header">
-<table border=0 width="350px" height="20px">
-<tr>
-	<td>
-    <div class="logo"><img src="images/logo.png" style="width: 100px;" href="http://eumetrain.org/"></img> ePort MapViewer v1.7
-	</div>
-	</td>
-	<td>
-	<!--<img onclick="window.open('variable_info.html','','width=1000,height=600,scrollbars=yes')" src="images/cc.png"  style="width: 15px; height: 15px; display: block;" ></img>-->
-	</td>
-</tr>
-</table>	
+	<div id="logo"><img src="images/logo.png" style="width: 150px;" href="http://eumetrain.org/"></img></div>
 </div>
-<div id="controlFlotante">
+
 <div id="navg">
-<nav>
-    <ul>
-        <li><img id="btnCrossSection" onclick="bclose(); crosssectionactive();" src="images/cross.png" class="btn" style="width: 17px; height: 17px; display: block;" title="Cross Section Tool" ></img></li>
-        <li><img id="btnGridblack" onclick="fgrid();" src="images/grid_ico.png" class="btn" style="width: 17px; height: 17px; display: block;" title="Grid Black"></img></li>
-        <li><img id="btnGridwhite" onclick="fgridw();" src="images/grid_icow.png" class="btn" style="width: 17px; height: 17px; display: block;" title="Grid White"></img></li>
-        <li><img id="btnVariablesDiv" onclick="floatingDivVariablesopen();" src="images/variable.png" class="btn" style="width: 17px; height: 17px; display: block;" title="Variables Menu" ></img></a></li>
-        <li><img id="btnCrossSectionDiv" onclick="floatingDivCrossSectionopen();" src="images/compass.png" class="btn" style="width: 17px; height: 17px; display: block;" title="Cross Section Menu"></img></li>
-		<li><img id="btnSatelliteDiv" onclick="floatingDivSatelliteopen();" src="images/satellite.png" class="btn" style="width: 17px; height: 17px; display: block;" title="Satellite Menu"></img></li>
-		<li><img id="btnSearchDiv" onclick="floatingDivSearchopen();" src="images/search.png" class="btn" style="width: 17px; height: 17px; display: block;" title="Open calendar"></img></li>
-		<br clear="all"></br>
-    </ul>
-    <a id="pull" href="#" class="btn"><img src="images/nav-icon.png" id="imgClickAndChange" style="width: 17px; height: 17px; display: block;"></a>
-</nav>
+	<nav>
+		<ul>
+			<li><img id="btnCrossSection" onclick="bclose(); crosssectionactive();" src="images/cross.png" class="btn" style="width: 14px; height: 14px; display: block;" title="Cross Section Tool" ></img></li>
+			<li><img id="btnGridblack" onclick="fgrid();" src="images/grid_ico.png" class="btn" style="width: 14px; height: 14px; display: block;" title="Grid Black"></img></li>
+			<li><img id="btnGridwhite" onclick="fgridw();" src="images/grid_icow.png" class="btn" style="width: 14px; height: 14px; display: block;" title="Grid White"></img></li>
+			<li><img id="btnVariablesDiv" onclick="floatingDivVariablesopen();" src="images/variable.png" class="btn" style="width: 14px; height: 14px; display: block;" title="Variables Menu" ></img></a></li>
+			<li><img id="btnCrossSectionDiv" onclick="floatingDivCrossSectionopen();" src="images/compass.png" class="btn" style="width: 14px; height: 14px; display: block;" title="Cross Section Menu"></img></li>
+			<li><img id="btnSatelliteDiv" onclick="floatingDivSatelliteopen();" src="images/satellite.png" class="btn" style="width: 14px; height: 14px; display: block;" title="Satellite Menu"></img></li>
+			<li><img id="btnSearchDiv" onclick="floatingDivSearchopen();" src="images/search.png" class="btn" style="width: 14px; height: 14px; display: block;" title="Open calendar"></img></li>
+			<br clear="all"></br>
+		</ul>
+		<a id="pull" href="#" class="btn"><img src="images/nav-icon.png" id="imgClickAndChange" style="width: 14px; height: 14px; display: block;"></a>
+	</nav>
 </div>	
-<table style="border: 0; right: 10px;">
-<tr>	
-	<td><a id="fecha" style="color:white; font-size: 13px; font-weight: bold; text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;"></a></td>
-	<td><button class="btn" id="prev24">-24h</button>
-	<button class="btn" id="prev6">-3h</button>
-	<button class="btn" id="now" >Last</button>
-	<button class="btn" id="next6">+3h</button>
-	<button class="btn" id="next24">+24h</button></td>
-</tr>	
-</table>
+
+<div id="controlmenu" class="table-menu2">
+	<table>
+		<tr>	
+			<td><button class="btn" id="prev24">-24h</button>
+			<button class="btn" id="prev6">-3h</button>
+			<button class="btn" id="now" >Last</button>
+			<button class="btn" id="next6">+3h</button>
+			<button class="btn" id="next24">+24h</button></td>
+			<td><a id="fecha" style="color:white; font-size: 13px; font-weight: bold; text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;"></a></td>
+		</tr>	
+	</table>
 </div>
 <div id="floatingDivSearch">
 <div style="float:right; color: red;" ><button id="xbuttonclose" class="xButton" onclick="floatingDivSearchopen();">x</button></div>
