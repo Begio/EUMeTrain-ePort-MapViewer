@@ -1,6 +1,6 @@
 # EUMeTrain-ePort-MapViewer
 
-New Update v.1.7.2019.11.10
+New Update v.1.7.2019.11.10 now mobile compatibility.
 
 https://begio.github.io/EUMeTrain-ePort-MapViewer/
 
