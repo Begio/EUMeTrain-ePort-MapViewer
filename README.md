@@ -2,9 +2,9 @@
 
 New Update v.1.7.2019.11.10 now mobile compatibility.
 
-https://begio.github.io/EUMeTrain-ePort-MapViewer/
+DEMO: https://begio.github.io/EUMeTrain-ePort-MapViewer/
 
-Eumetrain site http://eumetrain.org/ePort_MapViewer/
+FULL VERSION in Eumetrain site http://eumetrain.org/ePort_MapViewer/
 
 Allows to visualize EUMeTrain products through the Leaflet library (https://leafletjs.com/).
 
