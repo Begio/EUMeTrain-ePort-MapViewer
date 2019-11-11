@@ -62,13 +62,13 @@ All meteorological data and the webserver owns to Eumetrain. Contact E-mail: inf
 
 <div id="controlmenu" class="table-menu2">
 	<table>
-		<tr>	
+		<tr>
+			<td><a id="fecha" style="color:white; font-size: 13px; font-weight: bold; text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;"></a></td>
 			<td><button class="btn" id="prev24">-24h</button>
 			<button class="btn" id="prev6">-3h</button>
 			<button class="btn" id="now" >Last</button>
 			<button class="btn" id="next6">+3h</button>
 			<button class="btn" id="next24">+24h</button></td>
-			<td><a id="fecha" style="color:white; font-size: 13px; font-weight: bold; text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;"></a></td>
 		</tr>	
 	</table>
 </div>
@@ -447,7 +447,7 @@ All meteorological data and the webserver owns to Eumetrain. Contact E-mail: inf
 </div>
 
 <div id="floatingDivCrossSection">
-	<div style="float:right; color: red;" ><button id="xbuttonclose" class="xButton" onclick="floatingDivCrossSectionopen();">x</button></div>
+	<div style="float:right; color: red;" ><button id="xbuttonclose" class="xButton" onclick="floatingDivCrossSectionclose();">x</button></div>
 	<br>
 	<table><td><a style="font-weight: bold; font-size: 18px;"> &nbsp Cross-Section </a></td><td><img onclick="window.open('CrossSection_info.html','','width=1000,height=600,scrollbars=yes')" src="images/info_ico.png"  style="width: 20px; height: 20px; display: block;" ></img></td></table>
 		<table style="width:100%" border="0">
